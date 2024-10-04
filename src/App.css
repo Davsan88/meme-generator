@@ -1,0 +1,31 @@
+/* Define CSS Variables */
+:root {
+  --primary-color: #672280;
+  --secondary-color: #A626D3;
+  --text-color: #ffffff;
+  --spacing: 1rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  padding: var(--spacing) calc(2 * var(--spacing));
+  gap: calc(0.5 * var(--spacing));
+  color: var(--text-color);
+  /* min-height: 5rem; */
+}
+
+header img {
+  width: 2rem;
+  height: auto;
+}
+
+header h1 {
+  font-size: 1rem;
+  letter-spacing: -1px;
+}
+
+
+
