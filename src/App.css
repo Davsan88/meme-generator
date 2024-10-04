@@ -28,4 +28,23 @@ header h1 {
 }
 
 
+/* Medium screens (Tablets and small desktops) */
+@media (min-width: 768px) {
+  :root {
+    --spacing: 1.5rem; /* Increase spacing for larger screens */
+  }
+
+  header {
+    padding: var(--spacing);
+  }
+
+  header img {
+    width: 2.5rem;
+  }
+
+  header h1 {
+    font-size: 1.25rem;
+    letter-spacing: normal; /* Reset letter-spacing for larger text */
+  }
+}
 
