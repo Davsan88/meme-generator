@@ -10,7 +10,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(90deg, var(--primary-color) 1.18%, var(--secondary-color) 100%);
   padding: var(--spacing) calc(2 * var(--spacing));
   gap: calc(0.5 * var(--spacing));
   color: var(--text-color);
