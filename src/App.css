@@ -14,16 +14,15 @@ header {
   padding: var(--spacing) calc(2 * var(--spacing));
   gap: calc(0.5 * var(--spacing));
   color: var(--text-color);
-  /* min-height: 5rem; */
 }
 
 header img {
-  width: 2rem;
+  width: clamp(2rem, 5vw, 3rem);
   height: auto;
 }
 
 header h1 {
-  font-size: 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   letter-spacing: -1px;
 }
 
@@ -38,12 +37,7 @@ header h1 {
     padding: var(--spacing);
   }
 
-  header img {
-    width: 2.5rem;
-  }
-
   header h1 {
-    font-size: 1.25rem;
     letter-spacing: normal; /* Reset letter-spacing for larger text */
   }
 }
@@ -59,12 +53,7 @@ header h1 {
     padding: var(--spacing);
   }
 
-  header img {
-    width: 3rem;
-  }
-
   header h1 {
-    font-size: 1.5rem;
     letter-spacing: normal; /* Reset letter-spacing for larger text */
   }
 }
