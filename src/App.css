@@ -28,19 +28,24 @@ header h1 {
 
 .form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.5rem;
+  grid-template-columns: 1fr;  /* One column */
+  gap: 0.5rem;  /* Space between grid items */
 }
 
 .form__label {
   display: flex;
   flex-direction: column;
+  padding: var(--spacing);
 }
 
 .form__button {
-  grid-column: 1 / -1;
+  grid-column: 1 / -1;  /* Span all columns */
+  padding: calc(0.5 * var(--spacing)) var(--spacing);
   color: var(--text-color);
   background: linear-gradient(90deg, var(--primary-color) 1.18%, var(--secondary-color) 100%);
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
 }
   
 
@@ -57,6 +62,10 @@ header h1 {
 
   header h1 {
     letter-spacing: normal; /* Reset letter-spacing for larger text */
+  }
+
+  .form {
+    grid-template-columns: 1fr 1fr;  /* Two columns */
   }
 }
 
