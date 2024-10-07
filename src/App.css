@@ -6,6 +6,11 @@
   --spacing: 1rem;
 }
 
+
+* {
+  font-family: "Karla", sans-serif;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -34,11 +39,17 @@ main {
   display: grid;
   grid-template-columns: 1fr;  /* One column */
   gap: 0.5rem;  /* Space between grid items */
+  font-family: "Karla", sans-serif;
 }
 
 .form__label {
   display: flex;
   flex-direction: column;
+}
+
+.form__input {
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
 }
 
 .form__button {
@@ -48,7 +59,7 @@ main {
   background: linear-gradient(90deg, var(--primary-color) 1.18%, var(--secondary-color) 100%);
   border: none;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 5px;
 }
   
 
