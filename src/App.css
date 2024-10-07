@@ -45,9 +45,11 @@ main {
 .form__label {
   display: flex;
   flex-direction: column;
+  margin-bottom: 0.5rem; /* Adjust as needed */
 }
 
 .form__input {
+  margin-top: 0.25rem;
   border-radius: 5px;
   border: 1px solid #D5D4D8;
   text-indent: 5px;
