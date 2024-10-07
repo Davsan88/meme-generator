@@ -26,6 +26,10 @@ header h1 {
   letter-spacing: -1px;
 }
 
+main {
+  padding: calc(2 * var(--spacing));
+}
+
 .form {
   display: grid;
   grid-template-columns: 1fr;  /* One column */
@@ -35,7 +39,6 @@ header h1 {
 .form__label {
   display: flex;
   flex-direction: column;
-  padding: var(--spacing);
 }
 
 .form__button {
