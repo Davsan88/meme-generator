@@ -26,6 +26,24 @@ header h1 {
   letter-spacing: -1px;
 }
 
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__button {
+  grid-column: 1 / -1;
+  color: var(--text-color);
+  background: linear-gradient(90deg, var(--primary-color) 1.18%, var(--secondary-color) 100%);
+}
+  
+
 
 /* Medium screens (Tablets and small desktops) */
 @media (min-width: 768px) {
