@@ -27,7 +27,7 @@ header img {
 }
 
 header h1 {
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
   letter-spacing: -1px;
 }
 
@@ -47,6 +47,7 @@ main {
   display: flex;
   flex-direction: column;
   margin-bottom: 0.5rem; /* Adjust as needed */
+  font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
 .form__input {
@@ -54,6 +55,7 @@ main {
   border-radius: 5px;
   border: 1px solid #D5D4D8;
   text-indent: 5px;
+  font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
 .form__button {
@@ -64,6 +66,8 @@ main {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+  text-wrap: nowrap;
 }
   
 
