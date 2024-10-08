@@ -38,8 +38,9 @@ main {
 .form {
   display: grid;
   grid-template-columns: 1fr;  /* One column */
-  gap: 0.5rem;  /* Space between grid items */
+  gap: 1rem;  /* Space between grid items */
   font-family: "Karla", sans-serif;
+  padding: var(--spacing) calc(2 * var(--spacing));
 }
 
 .form__label {
@@ -84,6 +85,10 @@ main {
   .form {
     grid-template-columns: 1fr 1fr;  /* Two columns */
   }
+
+  .form__label {
+    margin-bottom: 1rem; /* Increase spacing between labels */
+  }
 }
 
 
@@ -99,5 +104,9 @@ main {
 
   header h1 {
     letter-spacing: normal; /* Reset letter-spacing for larger text */
+  }
+
+  .form__label {
+    margin-bottom: 1.5rem; /* Further increase spacing on large screens */
   }
 }
