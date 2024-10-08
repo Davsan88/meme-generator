@@ -4,7 +4,7 @@ import React from 'react'
 const Meme = () => {
     return (
         <main>
-            <form className='form'>
+            <div className='form'>
                 <label className='form__label' htmlFor='topText'>
                     Top text
                     <input
@@ -27,7 +27,7 @@ const Meme = () => {
                     />
                 </label>
                 <button className='form__button'>Get a new meme image 🖼</button>
-            </form>
+            </div>
         </main>
     )
 }
