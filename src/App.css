@@ -53,8 +53,9 @@ main {
 .form__input {
   margin-top: 0.25rem;
   border-radius: 5px;
+  padding: calc(0.5 * var(--spacing)) var(--spacing);
   border: 1px solid #D5D4D8;
-  text-indent: 5px;
+  text-indent: 3px;
   font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
