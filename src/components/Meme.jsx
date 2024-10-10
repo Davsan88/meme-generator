@@ -1,7 +1,11 @@
 import React from 'react'
+import memesData from '../memesData'
 
 
 const Meme = () => {
+    const memesArray = memesData.data.memes
+
+
     return (
         <main>
             <div className='form'>
