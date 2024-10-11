@@ -4,7 +4,8 @@ import memesData from '../memesData'
 
 const Meme = () => {
     const memesArray = memesData.data.memes
-
+    const randomIndex = Math.floor(Math.random() * memesArray.length)
+        
 
     return (
         <main>
