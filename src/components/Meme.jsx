@@ -3,9 +3,16 @@ import memesData from '../memesData'
 
 
 const Meme = () => {
-    const memesArray = memesData.data.memes
-    const randomIndex = Math.floor(Math.random() * memesArray.length)
-        
+    
+    const generateMeme = () => {
+        const memesArray = memesData.data.memes
+        const randomIndex = Math.floor(Math.random() * memesArray.length)
+        console.log(randomIndex)
+        const randomMeme = memesArray[randomIndex]
+        console.log(randomMeme)  
+        const memeUrl = randomMeme.url
+        console.log(memeUrl)
+    } 
 
     return (
         <main>
@@ -31,7 +38,11 @@ const Meme = () => {
                         className='form__input'
                     />
                 </label>
-                <button className='form__button'>Get a new meme image 🖼</button>
+                <button 
+                    className='form__button'
+                    onClick={generateMeme}
+                    >
+                    Get a new meme image 🖼</button>
             </div>
         </main>
     )
