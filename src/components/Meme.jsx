@@ -7,10 +7,7 @@ const Meme = () => {
     const generateMeme = () => {
         const memesArray = memesData.data.memes
         const randomIndex = Math.floor(Math.random() * memesArray.length)
-        console.log(randomIndex)
-        const randomMeme = memesArray[randomIndex]
-        console.log(randomMeme)  
-        const memeUrl = randomMeme.url
+        const memeUrl = memesArray[randomIndex].url
         console.log(memeUrl)
     } 
 
