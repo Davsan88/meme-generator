@@ -10,6 +10,7 @@ const Meme = () => {
         const memesArray = memesData.data.memes
         const randomIndex = Math.floor(Math.random() * memesArray.length)
         const memeUrl = memesArray[randomIndex].url
+        setMemeImage(memeUrl)
         console.log(memeUrl)
     } 
 
