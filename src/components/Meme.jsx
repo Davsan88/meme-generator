@@ -10,7 +10,7 @@ const Meme = () => {
         const memesArray = memesData.data.memes  // Retrieve the memes array
         const randomIndex = Math.floor(Math.random() * memesArray.length)  // Generate a random index
         const memeUrl = memesArray[randomIndex].url  // Get the URL of the selected meme
-        setMemeImage(memeUrl)
+        setMemeImage(memeUrl)  // Update the state with the new URL
         console.log(memeUrl)
     } 
 
@@ -44,6 +44,7 @@ const Meme = () => {
                     >
                     Get a new meme image 🖼</button>
             </div>
+            <img src={memeImage} alt="Meme" />
         </main>
     )
 }
