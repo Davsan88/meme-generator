@@ -6,7 +6,7 @@ const Meme = () => {
     // 1. Initialize state for memeImage with an empty string
     const [memeImage, setMemeImage] = React.useState('')
 
-
+    // 2. Function to generate a new meme image
     const generateMeme = () => {
         const memesArray = memesData.data.memes  // Retrieve the memes array
         const randomIndex = Math.floor(Math.random() * memesArray.length)  // Generate a random index
