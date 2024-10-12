@@ -8,8 +8,9 @@ const Meme = () => {
 
     // 2. Function to generate a new meme image
     const generateMeme = () => {
-        // a. Retrieve the array of meme objects from memesDa
+        // a. Retrieve the array of meme objects from memesData
         const memesArray = memesData.data.memes
+        // b. Generate a random index based on the length of the memes array
         const randomIndex = Math.floor(Math.random() * memesArray.length)  
         const memeUrl = memesArray[randomIndex].url 
         setMemeImage(memeUrl)
