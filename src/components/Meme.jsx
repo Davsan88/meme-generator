@@ -13,7 +13,8 @@ const Meme = () => {
         // b. Generate a random index based on the length of the memes array
         const randomIndex = Math.floor(Math.random() * memesArray.length)  
         // c. Get the URL of the randomly selected meme
-        const memeUrl = memesArray[randomIndex].url 
+        const memeUrl = memesArray[randomIndex].url
+        // d. Update the state with the new meme image URL
         setMemeImage(memeUrl)
         console.log(memeUrl)
     } 
