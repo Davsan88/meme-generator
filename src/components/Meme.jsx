@@ -3,6 +3,7 @@ import memesData from '../memesData'
 
 
 const Meme = () => {
+    // 1. Initialize state for memeImage with an empty string
     const [memeImage, setMemeImage] = React.useState('')
 
 
