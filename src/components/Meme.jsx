@@ -3,7 +3,9 @@ import memesData from '../memesData'
 
 
 const Meme = () => {
-    
+    const [memeImage, setMemeImage] = React.useState('')
+
+
     const generateMeme = () => {
         const memesArray = memesData.data.memes
         const randomIndex = Math.floor(Math.random() * memesArray.length)
