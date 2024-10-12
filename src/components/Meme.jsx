@@ -43,12 +43,15 @@ const Meme = () => {
                         className='form__input'
                     />
                 </label>
+                {/* 3. Call the generateMeme function when the button is click */}
                 <button 
                     className='form__button'
                     onClick={generateMeme}
-                    >
-                    Get a new meme image 🖼</button>
+                >
+                    Get a new meme image 🖼
+                </button>
             </div>
+            
             <img src={memeImage} alt="Meme" />
         </main>
     )
