@@ -52,7 +52,7 @@ const Meme = () => {
                 </button>
             </div>
             {/* 4. Display the meme image using the memeImage state */}
-            <img src={memeImage} alt="Meme" />
+            <img className='memeImage' src={memeImage} alt='Meme' />
         </main>
     )
 }
