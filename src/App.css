@@ -11,6 +11,13 @@
   font-family: "Karla", sans-serif;
 }
 
+.container {
+  max-width: 1200px; /* Limits the content width */
+  margin: 0 auto;     /* Centers the container */
+  padding: 0 1rem;    /* Adds horizontal padding */
+}
+
+
 header {
   display: flex;
   align-items: center;
