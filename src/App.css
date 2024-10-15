@@ -43,7 +43,7 @@ main {
 }
 
 .form,
-.memeImage {
+.meme__image {
   width: 100%;
   margin: 0 auto;
 }
@@ -82,7 +82,7 @@ main {
   font-size: clamp(1.1rem, 2.2vw, 1.35rem);
 }
   
-.memeImage {
+.meme__image {
   padding: var(--spacing) 0; /* Only vertical padding */
 }
 
