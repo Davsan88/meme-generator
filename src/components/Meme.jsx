@@ -4,7 +4,16 @@ import memesData from '../memesData'
 
 const Meme = () => {
     // 1. Initialize state for memeImage with an empty string
-    const [memeImage, setMemeImage] = React.useState('http://i.imgflip.com/1bij.jpg')
+    // const [memeImage, setMemeImage] = React.useState('http://i.imgflip.com/1bij.jpg')
+
+    const [meme, setMeme] = React.useState({
+        topText: '',
+        bottomText: '',
+        randomImage: 'http://i.imgflip.com/1bij.jpg'
+    })
+
+    const [allMemeImages, setAllMemeImages] = React.useState(memesData)
+
 
     // 2. Function to generate a new meme image
     const generateMeme = () => {
@@ -15,7 +24,10 @@ const Meme = () => {
         // c. Get the URL of the randomly selected meme
         const memeUrl = memesArray[randomIndex].url
         // d. Update the state with the new meme image URL
-        setMemeImage(memeUrl)
+        setMeme(prevMeme => ({
+            ...prevMeme,
+            randomImage: memeUrl,
+        }))
         console.log(memeUrl)
     }
 
@@ -53,7 +65,7 @@ const Meme = () => {
                     </button>
                 </div>
                 {/* 4. Display the meme image using the memeImage state */}
-                <img className='meme__image' src={memeImage} alt='Meme' />
+                <img className='meme__image' src={meme.randomImage} alt='Meme' />
             </div>
         </main>
     )
