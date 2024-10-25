@@ -3,31 +3,32 @@ import memesData from '../memesData'
 
 
 const Meme = () => {
-    // 1. Initialize state for memeImage with an empty string
-    // const [memeImage, setMemeImage] = React.useState('http://i.imgflip.com/1bij.jpg')
-
+    
+    // 1. Initialize state for `meme` with topText, bottomText, and randomImage
     const [meme, setMeme] = React.useState({
         topText: '',
         bottomText: '',
         randomImage: 'http://i.imgflip.com/1bij.jpg'
     })
 
+    // 2. Initialize state for all meme images from memesData
     const [allMemeImages, setAllMemeImages] = React.useState(memesData)
 
 
     // 2. Function to generate a new meme image
     const generateMeme = () => {
-        // a. Retrieve the array of meme objects from memesData
-        const memesArray = memesData.data.memes
+        // a. Retrieve the array of meme objects from allMemeImages
+        const memesArray = allMemeImages.data.memes
         // b. Generate a random index based on the length of the memes array
         const randomIndex = Math.floor(Math.random() * memesArray.length)
         // c. Get the URL of the randomly selected meme
         const memeUrl = memesArray[randomIndex].url
-        // d. Update the state with the new meme image URL
+        // d. Update the `meme` state with the new randomImage, keeping existing text
         setMeme(prevMeme => ({
             ...prevMeme,
             randomImage: memeUrl,
         }))
+
         console.log(memeUrl)
     }
 
@@ -35,6 +36,7 @@ const Meme = () => {
         <main>
             <div className='container'>
                 <div className='form'>
+                    {/* 4. Input field for top text (currently not connected to state) */}
                     <label className='form__label' htmlFor='topText'>
                         Top text
                         <input
@@ -46,6 +48,7 @@ const Meme = () => {
                         />
                     </label>
 
+                     {/* 5. Input field for bottom text (currently not connected to state) */}
                     <label className='form__label' htmlFor='bottomText'>
                         Bottom text
                         <input
@@ -56,7 +59,8 @@ const Meme = () => {
                             className='form__input'
                         />
                     </label>
-                    {/* 3. Call the generateMeme function when the button is click */}
+                    
+                    {/* 6. Call the generateMeme function when the button is clicked */}
                     <button
                         className='form__button'
                         onClick={generateMeme}
