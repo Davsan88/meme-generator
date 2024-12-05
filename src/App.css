@@ -120,6 +120,10 @@ main {
       2px 2px 5px #000;
 }
 
+.bottom {
+  bottom: 0;
+}
+
 /* Medium screens (Tablets and small desktops) */
 @media (min-width: 768px) {
   :root {
