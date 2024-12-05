@@ -86,7 +86,7 @@ main {
   padding: var(--spacing) 0; /* Only vertical padding */
   max-width: 100%;
   height: auto;
-  border-radius: 3px;
+  border-radius: 30px;
 }
 
 
