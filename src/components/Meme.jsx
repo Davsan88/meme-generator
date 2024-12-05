@@ -7,7 +7,7 @@ const Meme = () => {
     // 1. Initialize state for `meme` with topText, bottomText, and randomImage
     const [meme, setMeme] = React.useState({
         topText: 'One does not simply',
-        bottomText: '',
+        bottomText: 'walk into Mordor',
         randomImage: 'http://i.imgflip.com/1bij.jpg'
     })
 
