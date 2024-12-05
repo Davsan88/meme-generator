@@ -124,6 +124,10 @@ main {
   bottom: 0;
 }
 
+.top {
+  top: 0;
+}
+
 /* Medium screens (Tablets and small desktops) */
 @media (min-width: 768px) {
   :root {
