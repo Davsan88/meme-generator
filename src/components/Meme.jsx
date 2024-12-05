@@ -3,7 +3,7 @@ import memesData from '../memesData'
 
 
 const Meme = () => {
-    
+
     // 1. Initialize state for `meme` with topText, bottomText, and randomImage
     const [meme, setMeme] = React.useState({
         topText: '',
@@ -48,7 +48,7 @@ const Meme = () => {
                         />
                     </label>
 
-                     {/* 5. Input field for bottom text (currently not connected to state) */}
+                    {/* 5. Input field for bottom text (currently not connected to state) */}
                     <label className='form__label' htmlFor='bottomText'>
                         Bottom text
                         <input
@@ -59,7 +59,7 @@ const Meme = () => {
                             className='form__input'
                         />
                     </label>
-                    
+
                     {/* 6. Call the generateMeme function when the button is clicked */}
                     <button
                         className='form__button'
@@ -68,13 +68,17 @@ const Meme = () => {
                         Get a new meme image 🖼
                     </button>
                 </div>
-                
+
                 {/* 7. Display the meme image using meme.randomImage from state */}
-                <img 
-                    className='meme__image' 
-                    src={meme.randomImage} 
-                    alt='Meme' 
-                />
+                <div className='meme'>
+                    <img
+                        className='meme__image'
+                        src={meme.randomImage}
+                        alt='Meme'
+                    />
+                    <span className='top'>{meme.topText}</span>
+                    <span className='bottom'>{meme.bottomText}</span>
+                </div>
             </div>
         </main>
     )
