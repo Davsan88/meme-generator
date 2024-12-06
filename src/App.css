@@ -104,7 +104,7 @@ main {
   margin-block: 15px;
   padding-inline: 5px;
   font-family: impact, sans-serif;
-  font-size: 2rem;
+  font-size: clamp(2rem, 4vw, 6rem);
   text-transform: uppercase;
   color: white;
   letter-spacing: 1px;
@@ -154,7 +154,16 @@ main {
   .form__label {
     margin-bottom: 1rem; /* Increase spacing between labels */
   }
+
+  .meme .top {
+    top: 2%;
+  }
+
+  .meme .bottom {
+    bottom: 2%;
+  }
 }
+  
 
 
 /* Large screens (Desktops and larger) */
@@ -178,4 +187,6 @@ main {
   .form__label {
     margin-bottom: 1.5rem; /* Further increase spacing on large screens */
   }
+
+ 
 }
