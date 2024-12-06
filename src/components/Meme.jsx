@@ -65,7 +65,7 @@ const Meme = () => {
                             placeholder='Walk into Mordor'
                             className='form__input'
                             onChange={handleChange}
-                            value={meme.topText}
+                            value={meme.buttomText}
                         />
                     </label>
 
