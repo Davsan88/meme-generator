@@ -188,5 +188,11 @@ main {
     margin-bottom: 1.5rem; /* Further increase spacing on large screens */
   }
 
- 
+  .meme .top {
+    top: 3%;
+  }
+
+  .meme .bottom {
+    bottom: 3%;
+  }
 }
