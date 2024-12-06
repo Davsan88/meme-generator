@@ -48,7 +48,7 @@ const Meme = () => {
                             type="text"
                             id="topText"
                             name="topText"
-                            placeholder='Top text'
+                            placeholder='One does not simply'
                             className='form__input'
                             onChange={handleChange}
                             value={meme.topText}
@@ -62,7 +62,7 @@ const Meme = () => {
                             type="text"
                             id="bottomText"
                             name="bottomText"
-                            placeholder='Buttom text'
+                            placeholder='Walk into Mordor'
                             className='form__input'
                             onChange={handleChange}
                             value={meme.topText}
