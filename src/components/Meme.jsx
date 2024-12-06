@@ -64,6 +64,8 @@ const Meme = () => {
                             name="bottomText"
                             placeholder='Buttom text'
                             className='form__input'
+                            onChange={handleChange}
+                            value={meme.topText}
                         />
                     </label>
 
