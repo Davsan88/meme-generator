@@ -1,114 +1,111 @@
 /* Define CSS Variables */
 :root {
-  --primary-color: #672280;
-  --secondary-color: #A626D3;
-  --text-color: #ffffff;
-  --spacing: 1rem;
+  --primary-color: #672280;  /* Primary color used for gradients and highlights */
+  --secondary-color: #A626D3;  /* Secondary color used for gradients and highlights */
+  --text-color: #ffffff;  /* Default text color */
+  --spacing: 1rem;  /* Base spacing unit */
 }
-
 
 * {
-  font-family: "Karla", sans-serif;
+  font-family: "Karla", sans-serif;  /* Set default font family */
 }
 
-
 header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  background: linear-gradient(90deg, var(--primary-color) 1.18%, var(--secondary-color) 100%);
-  padding: var(--spacing);
-  gap: calc(0.5 * var(--spacing));
-  color: var(--text-color);
+  display: flex;  /* Flexbox for alignment */
+  align-items: center;  /* Center items vertically */
+  justify-content: flex-start;  /* Align items to the start horizontally */
+  background: linear-gradient(90deg, var(--primary-color) 1.18%, var(--secondary-color) 100%);  /* Gradient background */
+  padding: var(--spacing);  /* Padding around the header */
+  gap: calc(0.5 * var(--spacing));  /* Space between header elements */
+  color: var(--text-color);  /* Text color for header */
 }
 
 header img {
-  width: clamp(2rem, 5vw, 3rem);
-  height: auto;
+  width: clamp(2rem, 5vw, 3rem);  /* Responsive image width */
+  height: auto;  /* Maintain aspect ratio */
 }
 
 header h1 {
-  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
-  letter-spacing: -1px;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);  /* Responsive font size for heading */
+  letter-spacing: -1px;  /* Slight negative letter spacing for effect */
 }
 
 main {
-  padding: calc(2 * var(--spacing));
+  padding: calc(2 * var(--spacing));  /* Padding around main content */
 }
 
 .container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 var(--spacing)
+  max-width: 100%;  /* Container width constraint */
+  margin: 0 auto;  /* Center container horizontally */
+  padding: 0 var(--spacing);  /* Horizontal padding */
 }
 
 .form,
 .meme__image {
-  width: 100%;
-  margin: 0 auto;
+  width: 100%;  /* Full width for form and meme image */
+  margin: 0 auto;  /* Center elements horizontally */
 }
 
 .form {
-  display: grid;
-  grid-template-columns: 1fr;  /* One column */
+  display: grid;  /* Use grid layout for the form */
+  grid-template-columns: 1fr;  /* Single column layout by default */
   gap: 1rem;  /* Space between grid items */
-  font-family: "Karla", sans-serif;
+  font-family: "Karla", sans-serif;  /* Set font family for form */
 }
 
 .form__label {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 0.5rem; /* Adjust as needed */
-  font-size: clamp(1rem, 2vw, 1.25rem);
+  display: flex;  /* Flexbox for label and input alignment */
+  flex-direction: column;  /* Stack label and input vertically */
+  margin-bottom: 0.5rem;  /* Space below each label */
+  font-size: clamp(1rem, 2vw, 1.25rem);  /* Responsive font size for labels */
 }
 
 .form__input {
-  margin-top: 0.25rem;
-  border-radius: 5px;
-  padding: calc(0.5 * var(--spacing)) var(--spacing);
-  border: 1px solid #D5D4D8;
-  text-indent: 3px;
-  font-size: clamp(1rem, 2vw, 1.25rem);
+  margin-top: 0.25rem;  /* Space above input */
+  border-radius: 5px;  /* Rounded corners for input */
+  padding: calc(0.5 * var(--spacing)) var(--spacing);  /* Padding inside the input */
+  border: 1px solid #D5D4D8;  /* Light gray border for input */
+  text-indent: 3px;  /* Indent text inside the input */
+  font-size: clamp(1rem, 2vw, 1.25rem);  /* Responsive font size for inputs */
 }
 
 .form__button {
-  grid-column: 1 / -1;  /* Span all columns */
-  padding: calc(0.5 * var(--spacing)) var(--spacing);
-  color: var(--text-color);
-  background: linear-gradient(90deg, var(--primary-color) 1.18%, var(--secondary-color) 100%);
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+  grid-column: 1 / -1;  /* Span button across all columns */
+  padding: calc(0.5 * var(--spacing)) var(--spacing);  /* Padding inside button */
+  color: var(--text-color);  /* Button text color */
+  background: linear-gradient(90deg, var(--primary-color) 1.18%, var(--secondary-color) 100%);  /* Gradient background for button */
+  border: none;  /* Remove border */
+  cursor: pointer;  /* Change cursor to pointer on hover */
+  border-radius: 5px;  /* Rounded corners for button */
+  font-size: clamp(1.1rem, 2.2vw, 1.35rem);  /* Responsive font size for button */
 }
   
-
 .meme {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: var(--spacing) 0; /* Only vertical padding */
+  position: relative;  /* Enable absolute positioning for child elements */
+  display: flex;  /* Flexbox for meme container */
+  flex-direction: column;  /* Stack elements vertically */
+  justify-content: center;  /* Center elements vertically */
+  align-items: center;  /* Center elements horizontally */
+  padding: var(--spacing) 0;  /* Only vertical padding */
 }
 
 .meme__image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
+  max-width: 100%;  /* Responsive image width */
+  height: auto;  /* Maintain aspect ratio for meme image */
+  border-radius: 5px;  /* Rounded corners for meme image */
 }
 
 .meme span {
-  position: absolute;
-  text-align: center;
-  margin-block: 15px;
-  padding-inline: 5px;
-  font-family: impact, sans-serif;
-  font-size: clamp(2rem, 4vw, 6rem);
-  text-transform: uppercase;
-  color: white;
-  letter-spacing: 1px;
-  text-shadow:
+  position: absolute;  /* Position text relative to the image */
+  text-align: center;  /* Center text horizontally */
+  margin-block: 15px;  /* Margin above and below text */
+  padding-inline: 5px;  /* Padding on left and right sides of text */
+  font-family: impact, sans-serif;  /* Use Impact font for meme text */
+  font-size: clamp(2rem, 4vw, 6rem);  /* Responsive font size for meme text */
+  text-transform: uppercase;  /* Uppercase text for meme style */
+  color: white;  /* White text color */
+  letter-spacing: 1px;  /* Slight letter spacing for readability */
+  text-shadow:  /* Add shadow for better contrast on different backgrounds */
       2px 2px 0 #000,
       -2px -2px 0 #000,
       2px -2px 0 #000,
@@ -121,11 +118,11 @@ main {
 }
 
 .bottom {
-  bottom: 0;
+  bottom: 0;  /* Position bottom text at the bottom of the image */
 }
 
 .top {
-  top: 0;
+  top: 0;  /* Position top text at the top of the image */
 }
 
 /* Medium screens (Tablets and small desktops) */
@@ -135,36 +132,35 @@ main {
   }
 
   header {
-    padding: var(--spacing);
+    padding: var(--spacing);  /* Adjust header padding for medium screens */
   }
 
   header h1 {
-    letter-spacing: normal; /* Reset letter-spacing for larger text */
+    letter-spacing: normal;  /* Reset letter-spacing for larger text on medium screens */
   }
 
   .container {
-    max-width: 700px;
+    max-width: 700px;  /* Limit container width for medium screens */
   }
 
   .form {
-    grid-template-columns: 1fr 1fr;  /* Two columns */
-    column-gap: 5rem;
+    grid-template-columns: 1fr 1fr;  /* Use two columns for the form on medium screens */
+    column-gap: 5rem;  /* Increase space between columns */
   }
 
   .form__label {
-    margin-bottom: 1rem; /* Increase spacing between labels */
+    margin-bottom: 1rem;  /* Increase spacing between labels for better readability */
   }
 
   .meme .top {
-    top: 2%;
+    top: 2%;  /* Adjust top text position for medium screens */
   }
 
   .meme .bottom {
-    bottom: 2%;
+    bottom: 2%;  /* Adjust bottom text position for medium screens */
   }
 }
   
-
 
 /* Large screens (Desktops and larger) */
 @media (min-width: 1220px) {
@@ -173,26 +169,26 @@ main {
   }
 
   header {
-    padding: var(--spacing);
+    padding: var(--spacing);  /* Adjust header padding for large screens */
   }
 
   header h1 {
-    letter-spacing: normal; /* Reset letter-spacing for larger text */
+    letter-spacing: normal;  /* Reset letter-spacing for larger text on large screens */
   }
 
   .container {
-    max-width: 1000px;
+    max-width: 1000px;  /* Limit container width for large screens */
   }
 
   .form__label {
-    margin-bottom: 1.5rem; /* Further increase spacing on large screens */
+    margin-bottom: 1.5rem;  /* Further increase spacing between labels for large screens */
   }
 
   .meme .top {
-    top: 3%;
+    top: 3%;  /* Adjust top text position for large screens */
   }
 
   .meme .bottom {
-    bottom: 3%;
+    bottom: 3%;  /* Adjust bottom text position for large screens */
   }
 }
