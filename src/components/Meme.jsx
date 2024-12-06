@@ -32,6 +32,7 @@ const Meme = () => {
         console.log(memeUrl)
     }
 
+    // 8. Function to handle input changes and update the 'meme' state accordingly
     const handleChange = (event) => {
         const {value, name} = event.currentTarget
         setMeme(prevMeme => ({...prevMeme, [name]: value}))
