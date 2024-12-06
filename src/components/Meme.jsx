@@ -32,6 +32,11 @@ const Meme = () => {
         console.log(memeUrl)
     }
 
+    const handleChange = (event) => {
+        const {value, name} = event.currentTarget
+        setMeme(prevMeme => ({...prevMeme, [name]: value}))
+    }
+
     return (
         <main>
             <div className='container'>
@@ -45,6 +50,8 @@ const Meme = () => {
                             name="topText"
                             placeholder='Top text'
                             className='form__input'
+                            onChange={handleChange}
+                            value={meme.topText}
                         />
                     </label>
 
