@@ -1,15 +1,17 @@
-import React, { useEffect } from 'react'
+import React { useState, useEffect } from 'react'
 import memesData from '../memesData'
 
 
 const Meme = () => {
 
     // 1. Initialize state for `meme` with topText, bottomText, and randomImage
-    const [meme, setMeme] = React.useState({
+    const [meme, setMeme] = useState({
         topText: 'One does not simply',
         bottomText: 'walk into Mordor',
         randomImage: 'http://i.imgflip.com/1bij.jpg'
     })
+
+    const 
 
     useEffect(() => {
         fetch('https://api.imgflip.com/get_memes')
