@@ -11,12 +11,12 @@ const Meme = () => {
         randomImage: 'http://i.imgflip.com/1bij.jpg'
     })
 
-    const 
+    const [allMemes, setAllMemes] = useState()
 
     useEffect(() => {
         fetch('https://api.imgflip.com/get_memes')
         .then(res => res.json())
-        .then(data => console.log(data.data.memes) )
+        .then(data => setAllMemes(data.data.memes) )
     }, [])
 
     // // 2. Initialize state for all meme images from memesData
