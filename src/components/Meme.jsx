@@ -1,5 +1,5 @@
-import React { useState, useEffect } from 'react'
-import memesData from '../memesData'
+import React, { useState, useEffect } from 'react'
+// import memesData from '../memesData'
 
 
 const Meme = () => {
