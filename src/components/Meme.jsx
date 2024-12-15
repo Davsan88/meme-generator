@@ -64,7 +64,7 @@ const Meme = () => {
                         />
                     </label>
 
-                    {/* 5. Input field for bottom text (currently not connected to state) */}
+                    {/* Input field for bottom text */}
                     <label className='form__label' htmlFor='bottomText'>
                         Bottom text
                         <input
@@ -73,8 +73,8 @@ const Meme = () => {
                             name="bottomText"
                             placeholder='Walk into Mordor'
                             className='form__input'
-                            onChange={handleChange}
-                            value={meme.buttomText}
+                            onChange={handleChange}  // Update state on change
+                            value={meme.buttomText}  // Controlled input value
                         />
                     </label>
 
