@@ -37,10 +37,13 @@ const Meme = () => {
         console.log(memeUrl)
     }
 
-    // 8. Function to handle input changes and update the 'meme' state accordingly
+    // 5. Function to handle input changes and update the corresponding state
     const handleChange = (event) => {
-        const {value, name} = event.currentTarget
-        setMeme(prevMeme => ({...prevMeme, [name]: value}))
+        const {value, name} = event.currentTarget  // Destructure name and value from event
+        setMeme(prevMeme => ({
+            ...prevMeme,  // Preserve existing state properties
+            [name]: value  // Dynamically update the property matching the input's name
+        }))
     }
 
     return (
