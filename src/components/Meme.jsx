@@ -11,7 +11,8 @@ const Meme = () => {
         randomImage: 'http://i.imgflip.com/1bij.jpg'  // Default image URL
     })
 
-    const [allMemes, setAllMemes] = useState()
+    // 3. State to store all memes fetched from the API
+    const [allMemes, setAllMemes] = useState()  // Stores the array of memes fetched
 
     // 2. Fetch memes from the API when the component mounts
     useEffect(() => {
