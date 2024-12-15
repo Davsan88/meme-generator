@@ -13,11 +13,12 @@ const Meme = () => {
 
     const [allMemes, setAllMemes] = useState()
 
+    // 2. Fetch memes from the API when the component mounts
     useEffect(() => {
         fetch('https://api.imgflip.com/get_memes')
-        .then(res => res.json())
-        .then(data => setAllMemes(data.data.memes) )
-    }, [])
+            .then(res => res.json())  // Parse JSON response
+            .then(data => setAllMemes(data.data.memes) )  // Save the memes array to state
+    }, [])  // Empty dependency array ensures this runs only once when component mounts
 
 
     // 2. Function to generate a new meme image
