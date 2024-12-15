@@ -4,11 +4,11 @@ import React, { useState, useEffect } from 'react'
 
 const Meme = () => {
 
-    // 1. Initialize state for `meme` with topText, bottomText, and randomImage
+    // 1. State for the current meme, including text and image
     const [meme, setMeme] = useState({
-        topText: 'One does not simply',
-        bottomText: 'walk into Mordor',
-        randomImage: 'http://i.imgflip.com/1bij.jpg'
+        topText: 'One does not simply',  // Default top text
+        bottomText: 'walk into Mordor',  // Default bottom text
+        randomImage: 'http://i.imgflip.com/1bij.jpg'  // Default image URL
     })
 
     const [allMemes, setAllMemes] = useState()
@@ -18,11 +18,6 @@ const Meme = () => {
         .then(res => res.json())
         .then(data => setAllMemes(data.data.memes) )
     }, [])
-
-
-
-    // // 2. Initialize state for all meme images from memesData
-    // const [allMemeImages, setAllMemeImages] = React.useState(memesData)
 
 
     // 2. Function to generate a new meme image
