@@ -79,6 +79,14 @@ main {
   border-radius: 5px;  /* Rounded corners for button */
   font-size: clamp(1.1rem, 2.2vw, 1.35rem);  /* Responsive font size for button */
 }
+
+.form__button:active {
+  transform: scale(0.95); /* Slightly shrink the button */
+  background: var(--secondary-color); /* Change background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  transition: transform 0.2s, background 0.2s; /* Smooth transition */
+}
+
   
 .meme {
   position: relative;  /* Enable absolute positioning for child elements */
