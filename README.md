@@ -1,8 +1,13 @@
-# React + Vite
+# Workflow Guide: Building the Meme Generator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+**Objective**: Build an interactive Meme Generator App that allows users to generate memes by selecting random images from an API and customizing top and bottom text.  
+**Technologies Used**: React, JavaScript, CSS.  
+**Key Concepts**:
+- State management with `useState`.
+- Fetching data from an API using `useEffect`.
+- Handling forms and input changes.
+- Conditional rendering.
+- CSS styling for responsive design.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
