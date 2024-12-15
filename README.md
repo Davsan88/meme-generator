@@ -11,3 +11,9 @@
 - CSS styling for responsive design.
 
 ---
+
+## Step-by-Step Workflow
+
+### 1. **Initialize State for Meme**
+**Action**: Set up a state variable to manage the current meme's text and image.
+
