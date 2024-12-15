@@ -30,4 +30,4 @@ const [meme, setMeme] = useState({
 ---
 
 
-Work in progress
+Work in progress...
