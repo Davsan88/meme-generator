@@ -50,7 +50,7 @@ const Meme = () => {
         <main>
             <div className='container'>
                 <div className='form'>
-                    {/* 4. Input field for top text (currently not connected to state) */}
+                    {/* Input field for top text */}
                     <label className='form__label' htmlFor='topText'>
                         Top text
                         <input
@@ -59,8 +59,8 @@ const Meme = () => {
                             name="topText"
                             placeholder='One does not simply'
                             className='form__input'
-                            onChange={handleChange}
-                            value={meme.topText}
+                            onChange={handleChange}  // Update state on change
+                            value={meme.topText}  // Controlled input value
                         />
                     </label>
 
