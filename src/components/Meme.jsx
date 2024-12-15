@@ -87,15 +87,15 @@ const Meme = () => {
                     </button>
                 </div>
 
-                {/* 7. Display the meme image using meme.randomImage from state */}
+                {/* Display the meme image using meme.randomImage from state */}
                 <div className='meme'>
                     <img
                         className='meme__image'
-                        src={meme.randomImage}
+                        src={meme.randomImage}  // Display the current meme image
                         alt='Meme'
                     />
-                    <span className='top'>{meme.topText}</span>
-                    <span className='bottom'>{meme.bottomText}</span>
+                    <span className='top'>{meme.topText}</span>  {/* Top text overlay */}
+                    <span className='bottom'>{meme.bottomText}</span>  {/* Bottom text overlay */}
                 </div>
             </div>
         </main>
