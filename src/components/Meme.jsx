@@ -22,16 +22,16 @@ const Meme = () => {
     }, [])  // Empty dependency array ensures this runs only once when component mounts
 
 
-    // 2. Function to generate a new meme image
+    // 4. Function to generate a new random meme image
     const generateMeme = () => {
-        // b. Generate a random index based on the length of the memes array
+        // Generate a random index based on the length of the memes array
         const randomIndex = Math.floor(Math.random() * allMemes.length)
-        // c. Get the URL of the randomly selected meme
+        // Get the URL of the randomly selected meme
         const memeUrl = allMemes[randomIndex].url
-        // d. Update the `meme` state with the new randomImage, keeping existing text
+        // Update the `meme` state with the new randomImage, keeping existing text
         setMeme(prevMeme => ({
-            ...prevMeme,
-            randomImage: memeUrl,
+            ...prevMeme,  // Preserve existing state properties
+            randomImage: memeUrl,  // Update the randomImage property
         }))
 
         console.log(memeUrl)
