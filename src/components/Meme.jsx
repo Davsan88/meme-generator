@@ -19,26 +19,26 @@ const Meme = () => {
         .then(data => setAllMemes(data.data.memes) )
     }, [])
 
+
+
     // // 2. Initialize state for all meme images from memesData
     // const [allMemeImages, setAllMemeImages] = React.useState(memesData)
 
 
-    // // 2. Function to generate a new meme image
-    // const generateMeme = () => {
-    //     // a. Retrieve the array of meme objects from allMemeImages
-    //     const memesArray = allMemeImages.data.memes
-    //     // b. Generate a random index based on the length of the memes array
-    //     const randomIndex = Math.floor(Math.random() * memesArray.length)
-    //     // c. Get the URL of the randomly selected meme
-    //     const memeUrl = memesArray[randomIndex].url
-    //     // d. Update the `meme` state with the new randomImage, keeping existing text
-    //     setMeme(prevMeme => ({
-    //         ...prevMeme,
-    //         randomImage: memeUrl,
-    //     }))
+    // 2. Function to generate a new meme image
+    const generateMeme = () => {
+        // b. Generate a random index based on the length of the memes array
+        const randomIndex = Math.floor(Math.random() * allMemes.length)
+        // c. Get the URL of the randomly selected meme
+        const memeUrl = allMemes[randomIndex].url
+        // d. Update the `meme` state with the new randomImage, keeping existing text
+        setMeme(prevMeme => ({
+            ...prevMeme,
+            randomImage: memeUrl,
+        }))
 
-    //     console.log(memeUrl)
-    // }
+        console.log(memeUrl)
+    }
 
     // 8. Function to handle input changes and update the 'meme' state accordingly
     const handleChange = (event) => {
