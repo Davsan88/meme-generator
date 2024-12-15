@@ -17,3 +17,16 @@
 ### 1. **Initialize State for Meme**
 **Action**: Set up a state variable to manage the current meme's text and image.
 
+```javascript
+const [meme, setMeme] = useState({
+  topText: "One does not simply",
+  bottomText: "walk into Mordor",
+  randomImage: "http://i.imgflip.com/1bij.jpg"
+});
+```
+
+**Purpose**: This state stores the meme's top text, bottom text, and the image URL.
+
+---
+
+
