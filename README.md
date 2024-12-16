@@ -65,6 +65,19 @@ const generateMeme = () => {
 ---
 
 
+### 4. **Handle Input Changes**
+**Action**: Create a function to update the top and bottom text in the meme state based on user input.
+
+```javascript
+const handleChange = (event) => {
+  const { name, value } = event.target;
+  setMeme(prevMeme => ({
+    ...prevMeme,
+    [name]: value
+  }));
+};
+```
+
 
 
 
