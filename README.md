@@ -30,4 +30,17 @@ const [meme, setMeme] = useState({
 ---
 
 
+### 2. **Fetch Meme Data from API**
+**Action**: Use `useEffect` to fetch an array of memes from the Imgflip API when the component first renders.
+
+```javascript
+useEffect(() => {
+  fetch('https://api.imgflip.com/get_memes')
+    .then(res => res.json())
+    .then(data => setAllMemes(data.data.memes));
+}, []);
+```
+
+
+
 Work in progress...
