@@ -60,6 +60,11 @@ const generateMeme = () => {
 };
 ```
 
+**Purpose**: Update the `randomImage` property of the meme state with a new random meme image.
+
+---
+
+
 
 
 
