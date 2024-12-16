@@ -117,6 +117,11 @@ return (
 );
 ```
 
+**Purpose**: Provide a user interface for entering text, generating memes, and displaying the meme.
+
+---
+
+
 
 
 
