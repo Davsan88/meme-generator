@@ -86,6 +86,37 @@ const handleChange = (event) => {
 ### 5. **Create the Meme Generator Layout**
 **Action**: Build the app's layout, including input fields, a button to generate memes, and an area to display the meme.
 
+```jsx
+return (
+  <main>
+    <div className="container">
+      <div className="form">
+        <label htmlFor="topText">Top text</label>
+        <input
+          type="text"
+          name="topText"
+          value={meme.topText}
+          onChange={handleChange}
+        />
+        <label htmlFor="bottomText">Bottom text</label>
+        <input
+          type="text"
+          name="bottomText"
+          value={meme.bottomText}
+          onChange={handleChange}
+        />
+        <button onClick={generateMeme}>Get a new meme image 🖼</button>
+      </div>
+      <div className="meme">
+        <img src={meme.randomImage} alt="Generated Meme" />
+        <span className="top">{meme.topText}</span>
+        <span className="bottom">{meme.bottomText}</span>
+      </div>
+    </div>
+  </main>
+);
+```
+
 
 
 
