@@ -78,6 +78,14 @@ const handleChange = (event) => {
 };
 ```
 
+**Purpose**: Dynamically update the meme's text fields based on user input.
+
+---
+
+
+### 5. **Create the Meme Generator Layout**
+**Action**: Build the app's layout, including input fields, a button to generate memes, and an area to display the meme.
+
 
 
 
