@@ -49,6 +49,17 @@ useEffect(() => {
 ### 3. **Generate a Random Meme Image**
 **Action**: Create a function to generate a random meme image from the fetched API data.
 
+```javascript
+const generateMeme = () => {
+  const randomIndex = Math.floor(Math.random() * allMemes.length);
+  const memeUrl = allMemes[randomIndex].url;
+  setMeme(prevMeme => ({
+    ...prevMeme,
+    randomImage: memeUrl
+  }));
+};
+```
+
 
 
 
