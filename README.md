@@ -41,6 +41,12 @@ useEffect(() => {
 }, []);
 ```
 
+**Purpose**: Fetch meme data and store it in a state variable for later use.
+
+---
+
+
+
 
 
 Work in progress...
