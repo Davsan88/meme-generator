@@ -46,6 +46,9 @@ useEffect(() => {
 ---
 
 
+### 3. **Generate a Random Meme Image**
+**Action**: Create a function to generate a random meme image from the fetched API data.
+
 
 
 
