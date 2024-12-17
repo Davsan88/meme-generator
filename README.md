@@ -140,6 +140,12 @@ return (
 - Use CSS for styling, ensuring the layout is responsive across devices.
 - Adjust text size and positioning using `clamp` and media queries.
 
+### 5. **Component Reusability**
+- Break down the app into logical components for better readability and reusability.
+
+---
+
+
 
 
 
