@@ -129,6 +129,11 @@ return (
 - Use a separate state variable to store all memes fetched from the API.
 
 
+### 2. **Fetching Data with `useEffect`**
+- Use `useEffect` to fetch data when the component mounts.
+- Ensure data fetching is efficient and error-free.
+
+
 
 
 
