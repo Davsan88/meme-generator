@@ -124,6 +124,11 @@ return (
 
 ## Key Concepts and Takeaways
 
+### 1. **State Management**
+- Store the current meme's data in a state object to handle updates dynamically.
+- Use a separate state variable to store all memes fetched from the API.
+
+
 
 
 
