@@ -136,6 +136,10 @@ return (
 ### 3. **Dynamic Updates**
 - Use the `setState` function to immutably update specific properties of the state object.
 
+### 4. **Responsive CSS**
+- Use CSS for styling, ensuring the layout is responsive across devices.
+- Adjust text size and positioning using `clamp` and media queries.
+
 
 
 
