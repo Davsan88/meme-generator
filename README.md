@@ -133,6 +133,9 @@ return (
 - Use `useEffect` to fetch data when the component mounts.
 - Ensure data fetching is efficient and error-free.
 
+### 3. **Dynamic Updates**
+- Use the `setState` function to immutably update specific properties of the state object.
+
 
 
 
